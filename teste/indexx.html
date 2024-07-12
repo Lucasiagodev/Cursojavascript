@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="nome">lucas iago dos santos</h1>
+    <h1 class="nome">lucas iago dos santos</h1>
+    <h1 class="nome">lucas iago dos santos</h1>
+    <h1 class="nome">lucas iago dos santos</h1>
+    <button onclick="segundos()">muda estilo</button>
+    <script>
+       function estilo(){
+        let mudar = document.querySelectorAll('.nome');
+       
+       mudar.forEach((item, index, array) => {
+           item.style.fontFamily = "Arial" // oitem e  ocontem a variavel que contem a tag que modificar os estilos
+           if(index < 2){
+            // o index é para você ver as alterações para cada index
+               item.style.color = "red"
+             
+           }else if(index === 2){
+                 item.style.color = "blue"
+           }else if(index => 3){
+               item.style.fontSize = "40px"
+
+           }
+        
+        });
+    }
+       function segundos(){
+        
+        setTimeout(estilo, 3000);
+    }
+       
+       
+    </script>
+</body>
+</html>
