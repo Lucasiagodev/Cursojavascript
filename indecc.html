@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const imagens = [
+        {
+            src: "./assets/gallery/image1.jpg",
+
+            alt: "imagem 1"
+        },
+        {
+            src: "./assets/gallery/image2.jpg",
+            alt: "imagem 2"
+        },
+        {
+            src: "./assets/gallery/image2.jpg",
+            alt: "imagem 2"
+        },
+        {
+            src: "./assets/gallery/image2.jpg",
+            alt: "imagem 2"
+        }
+];
+
+        imagens.forEach(function(img,index){
+            let foto = document.createElement("img");
+            foto.src = img.src
+            foto.alt = img.alt
+            foto.style.width = "500px"
+            
+            console.log(foto)
+            document.body.appendChild(foto)
+});
+
+
+        // let foto = document.createElement("img");
+        // let foto1 = document.createElement("img");
+        // foto.src = imagens[0].src
+        // foto.alt = imagens[0].alt
+        // foto1.src = imagens[1].src
+        // foto1.alt = imagens[1].alt
+        // document.body.appendChild(foto);
+        // document.body.appendChild(foto1);
+        // console.log(imagens)
+        // console.log(foto)
+    </script>
+</body>
+</html>
