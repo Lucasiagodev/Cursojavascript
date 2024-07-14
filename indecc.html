@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+            .foto {
+            width: 1020px;
+            border: 2px solid black; /* Apenas para adicionar um exemplo visual */
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <script>
         const imagens = [
@@ -31,8 +40,9 @@
             let foto = document.createElement("img");
             foto.src = img.src
             foto.alt = img.alt
+            foto.id = 1
             foto.style.width = "500px"
-            
+            foto.classList.add("foto")
             console.log(foto)
             document.body.appendChild(foto)
 });
